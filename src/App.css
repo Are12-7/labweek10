@@ -1,38 +1,75 @@
-.App {
+/*Carlos Arellano - 101339585*/
+
+form {
+  border: 2px solid green;
+  padding: 2rem;
+  width: 1222px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  margin: 0.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.top_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div.bottom_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.name_input, .email_input, .address1_input, .address2_input, .city_input, .province_input, .input_postal_code {
+  width: 100%;
+}
+
+
+.province_input_label {
+  margin-bottom: 0.8rem;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+input[type=checkbox] {
+  margin-left: 30rem;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.btn_submit {
+  background-color: green;
   color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  display: block;
+  margin-left: 31.6rem;
+  width: 15%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.output {
+  border: 2px solid green;
+  margin: 4rem auto;
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+  width: 1260px;
+  color: black;
 }
